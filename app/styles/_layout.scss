@@ -1,0 +1,23 @@
+main {
+  $headerHeight: 80px;
+  $footerHeight: 64px;
+  $footerMarginTop: 80px;
+
+  min-height: calc(100vh - $headerHeight - $footerHeight - $footerMarginTop);
+
+  @screen md {
+    $headerHeight: 120px;
+    $footerHeight: 100px;
+    $footerMarginTop: 120px;
+
+    min-height: calc(100vh - $headerHeight - $footerHeight - $footerMarginTop);
+  }
+}
+
+.o-container {
+  @apply w-full px-5 md:px-0 mx-auto;
+
+  @screen md {
+    max-width: 640px;
+  }
+}

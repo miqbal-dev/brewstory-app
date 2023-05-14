@@ -1,7 +1,9 @@
-import Author from './components/Author';
-import List from './components/List';
+import React from 'react'
 
-export default function Home() {
+import Author from '../components/Author'
+import List from '../components/List'
+
+function Uikit() {
 
   const dummy = [
     {
@@ -51,3 +53,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Uikit
